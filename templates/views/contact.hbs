@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>headlinks}}
+</head>
+
+<body>
+
+    <!-- header section -->
+    {{>navbar}}
+
+
+
+
+    <div class="container-fluid col-md-10  hero_section mx-auto">
+        <div class="row align-items-center justify-content-center">
+            <!-- left hero section -->
+
+            <div class="col-md-6 col-12 hero_section_left">
+
+                <form class="form-container container">
+                    <h1 class="text-center">Contact Form</h1>
+                    <div class="row">
+                        <label for="fullname">Full Name</label>
+                        <input type="text" id="fullname" class="form-control" placeholder="Your Full Name here..."
+                            aria-label="Full name">
+                    </div>
+
+                    <div class="row">
+                        <label for="message">Message Us</label>
+                        <textarea name="message" class="form-control" id="message" cols="30" rows="5"
+                            placeholder="Type your message..."></textarea>
+                    </div>
+                    <div class="row">
+                        <label for="email">Your Email</label>
+                        <input type="email" class="form-control" name="email" id="email"
+                            placeholder="example@gmail.com">
+                    </div>
+                    <div class="btn mx-auto w-100">
+                        <button >Submit</button>
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- footer -->
+
+    {{>footer}}
+
+
+
+
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

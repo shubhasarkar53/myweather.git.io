@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>headlinks}}
+</head>
+
+<body>
+
+    <!-- header section -->
+    {{>navbar}}
+
+
+
+
+    <div class="container-fluid col-md-10  hero_section mx-auto">
+        <div class="row align-items-center justify-content-center">
+            <!-- left hero section -->
+
+            <div class="col-md-6 col-12 hero_section_left">
+
+                <form class="form-container container">
+                    <div class="upper-section">
+                        <div class="cityName-container">
+                            <input type="text" name="cityName" id="cityName" placeholder="Enter the city name....">
+                            <input id="search-btn" type="submit" value="Search">
+                        </div>
+                    </div>
+                    <div class="main-section">
+                        <div class="middle-section">
+                            <p id="day"></p>
+                            <p> <span id="date"></span> <span id="month" ></span></p>
+                        </div>
+                        <div class="display-weather-section">
+                            <p class="outputCity"> </p>
+                            <h2 class="temp-stat"> <span class="temp"></span> <sup>0</sup>C </h2>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- footer -->
+
+    {{>footer}}
+
+
+
+    <script src="js/main.js"></script>
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

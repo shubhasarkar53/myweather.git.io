@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   {{>headlinks}}
+
+</head>
+
+<body>
+
+    <!-- header section -->
+    {{>navbar}}
+
+    <!-- hero section -->
+
+
+    <div class="container-fluid col-md-10  hero_section mx-auto">
+        <div class="row">
+                <!-- left hero section -->
+                <div class="col-md-6 col-12 hero_section_left  ">
+                    <p>Welcome to MyWeather</p>
+                    <h1>Get the latest <span>Weather</span> info of your city</h1>
+                    <a href="/weather"> <button>Check now</button></a>
+                </div>
+   
+
+            <!-- rIGHT hero section -->
+            <div class="col-md-6 col-12 hero_section_right">
+
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="images/weather1.svg" class=" carousel-img w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/weather2.svg" class=" carousel-img w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/weather3.svg" class=" carousel-img w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+
+    {{>footer}}
+
+
+
+
+
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
